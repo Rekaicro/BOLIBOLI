@@ -29,23 +29,33 @@
         .dao-hang-zuo{
             position: relative;
             left: 30px;
-            background-color: #5f5f5f;
             height: 100%;
             display: flex;
             align-items:center;
         }
  
-        .shou-ye > img{
+        .dao-hang-zuo > a > img{
             height: 50%;
             width: auto;
             align-items: center;
+            padding: 0 5px 0 0;
         }
-        .shou-ye{
+        .dao-hang-zuo > a{
+            color: #ffffff;
             height: 100%;
             display: flex;
             text-decoration: none;
             align-items: center;
             justify-content: center;
+            padding: 0 5px;
+        }
+        .dao-hang-zuo > a > *{
+            position: relative;
+            bottom: 0;
+            transition: all 200ms ease-in-out;
+        }
+        .dao-hang-zuo > a:hover > *{
+            bottom: 5px;
         }
         .su-suo-kuang{
             background-color: #5f5f5f;
@@ -60,14 +70,23 @@
             position: relative;
             right: 30px;
         }
+        
     </style>
 </head>
 <body>
     <div class="bei-jing-tu-pian" >
         <div class="dao-hang-lan">
             <div class="dao-hang-zuo">
-                <a href="https://www.bilibili.com/" class="shou-ye"><img src="images/首页.png"  /><div>首页</div></a>
-                <a class="fan-ju" href="https://www.bilibili.com/">番剧</a>
+                <a href="https://www.bilibili.com/" class="shou-ye"><img src="images/哔哩哔哩.png"  /><div>首页</div></a>
+                <a class="fan-ju" href="https://www.bilibili.com/"><div>番剧</div></a>
+                <a class="fan-ju" href="https://www.bilibili.com/"><div>直播</div></a>
+                <a class="fan-ju" href="https://www.bilibili.com/"><div>游戏中心</div></a>
+                <a class="fan-ju" href="https://www.bilibili.com/"><div>会员购</div></a>
+                <a class="fan-ju" href="https://www.bilibili.com/"><div>漫画</div></a>
+                <a class="fan-ju" href="https://www.bilibili.com/"><div>S14</div></a>
+                <a class="fan-ju" href="https://www.bilibili.com/"><div>程序员</div></a>
+                <a class="fan-ju" href="https://www.bilibili.com/"><img src="images/下载.png"  /><div>下载客户端</div></a>
+                
             </div>
 
 
