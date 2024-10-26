@@ -22,8 +22,6 @@
             padding: 0 30px;
             display: flex;
             justify-content: space-between;
-            position: relative;
-            top: 0px;
             align-items:center;
             height: 50px;
         }
@@ -49,6 +47,7 @@
             align-items: center;
             justify-content: center;
             padding: 0 5px;
+            font-size: 13px;
         }
         .dao-hang-zuo > a > *{
             position: relative;
@@ -159,10 +158,9 @@
 
         
         .yong-hu{
-            padding: 10px 0 0 0;
+            padding: 0 0 0 0;
             display: flex;
             flex-shrink: 0;
-            width: 100px;
             height: 50px;
             justify-content:flex-end;
             align-items: center;
@@ -175,8 +173,9 @@
             text-decoration: none;
             align-items: center;
             justify-content: center;
-            padding: 0 5px;
-
+            padding: 0 2px;
+            width: 50px;
+            font-size: 12px;
         }
        
        .yong-hu > .tou-gao{
@@ -185,14 +184,96 @@
         border-radius: 10px;
         padding: 0 15px 0 10px;
         height: 70%;
-       }
+        margin-left: 15px;
+        width: 60px;;
+        }
 
        .yong-hu > a > img{
             height: 50%;
             width: auto;
             align-items: center;
             padding: 0 5px 0 5px;
+
+            
         }
+        
+        .tou-xiang > .tou-tiang1{
+            padding: 0 15px;
+            height: 38px;
+            width: 38px;
+            flex-shrink: 0;
+            flex-direction: row-reverse;
+            
+        }
+
+
+        .tou-xiang:hover > .tou-tiang1 > .tou-xiang-tu{
+            transform: scale(1.8) translate(-5px,15px);
+        }
+
+
+
+
+        .yong-hu > .tou-xiang > .tou-tiang1 > .tou-xiang-tu{
+            display: block;
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+            border: #ffffff 2px solid;
+            transition: all 350ms ease-in-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        .yong-hu > .tou-xiang{
+            flex-direction: row;
+        }
+
+
+        .yong-hu > .you > div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .yong-hu > .you > div > .you-tu{
+            display: block;
+            height: 20px;
+            width: 20px;
+        }
+        
+
+
+        .yong-hu > .tou-xiang > .tou-tiang1 > .tou-xiang-kuo-zhan{
+            display: none;
+            width: 100%;
+            padding-top: 15px;
+            justify-content: center;
+        }
+
+        @keyframes display {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .tou-xiang-kuo-zhan > .nei-bu-kuang {
+            background-color: #fff;
+            min-width: 300px;
+            border-radius: 10px;
+        }
+
+        .tou-xiang:hover > .tou-tiang1 > .tou-xiang-kuo-zhan{
+            display: flex;
+        }
+
+        .tou-xiang:hover > .tou-tiang1 > .tou-xiang-kuo-zhan > .nei-bu-kuang{
+            animation: display 300ms ease-in-out;
+        }
+
     </style>
 </head>
 <body>
@@ -238,13 +319,39 @@
             </div>
 
             <div class="yong-hu">
-                <a href="#" class="touxiang"><div class=""><img src="images/头像.jpg" /></div></a>
-                <a href="#" class="you"><div>创作中心</div></a>
-                <a href="#" class="you"><div>历史</div></a>
-                <a href="#" class="you"><div>收藏</div></a>
-                <a href="#" class="you"><div>动态</div></a>
-                <a href="#" class="you"><div>消息</div></a>
-                <a href="#" class="you"><div>大会员</div></a>
+                <a href="#" class="tou-xiang">
+                    <div class="tou-tiang1">
+                        <img class="tou-xiang-tu" src="images/头像.jpg" />
+                        <div class="tou-xiang-kuo-zhan">
+                            <div class="nei-bu-kuang">
+                                <div>用户</div>
+                                <div>用户</div>
+                                <div>用户</div>
+                                <div>用户</div>
+                                <div>用户</div>
+                                <div>用户</div>
+                                <div>用户</div>
+                            </div>
+                            
+                        </div>
+                
+                
+                    </div>
+                    
+                
+                
+                
+                </a>
+
+
+
+
+                <a href="#" class="you"><div><img class="you-tu" src="images/我的大会员-copy.svg"/>大会员</div></a>
+                <a href="#" class="you"><div><img class="you-tu" src="images/信封.svg"/>消息</div></a>
+                <a href="#" class="you"><div><img class="you-tu" src="images/windmill.svg"/>动态</div></a>
+                <a href="#" class="you"><div><img class="you-tu" src="images/收藏.svg"/>收藏</div></a>
+                <a href="#" class="you"><div><img class="you-tu" src="images/时钟.svg"/>历史</div></a>
+                <a href="#" class="you"><div><img class="you-tu" src="images/灯泡.svg " />创作中心</div></a>
                 <a href="#" class="tou-gao"><img src="images/投稿列表.png" />投稿</a>
             </div>
         </div>
