@@ -68,6 +68,7 @@
             height: 100%;
             align-items: center;
         }
+        
         .sou-suo-kuang > input{
             background-color: rgba(235, 235, 235, 0);
             border-radius: 5px;
@@ -158,12 +159,40 @@
 
         
         .yong-hu{
+            padding: 10px 0 0 0;
+            display: flex;
             flex-shrink: 0;
-            background-color: #9a9a9a;
             width: 100px;
             height: 50px;
+            justify-content:flex-end;
+            align-items: center;
+
         }
-        
+        .yong-hu > a{
+            color: #ffffff;
+            height: 100%;
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5px;
+
+        }
+       
+       .yong-hu > .tou-gao{
+        align-items: center;
+        background-color: #ff78ae;
+        border-radius: 10px;
+        padding: 0 15px 0 10px;
+        height: 70%;
+       }
+
+       .yong-hu > a > img{
+            height: 50%;
+            width: auto;
+            align-items: center;
+            padding: 0 5px 0 5px;
+        }
     </style>
 </head>
 <body>
@@ -209,9 +238,14 @@
             </div>
 
             <div class="yong-hu">
-
-
-
+                <a href="#" class="touxiang"><div class=""><img src="images/头像.jpg" /></div></a>
+                <a href="#" class="you"><div>创作中心</div></a>
+                <a href="#" class="you"><div>历史</div></a>
+                <a href="#" class="you"><div>收藏</div></a>
+                <a href="#" class="you"><div>动态</div></a>
+                <a href="#" class="you"><div>消息</div></a>
+                <a href="#" class="you"><div>大会员</div></a>
+                <a href="#" class="tou-gao"><img src="images/投稿列表.png" />投稿</a>
             </div>
         </div>
     </div>
